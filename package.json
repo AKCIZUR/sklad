@@ -1,0 +1,8 @@
+{
+  "name":"botanic-inventory",
+  "version":"1.0.0",
+  "private":true,
+  "description":"Professional lightweight inventory/WMS demo.",
+  "scripts":{"dev":"bun server.mjs","validate":"node scripts/validate.mjs","json:check":"bun -e \"JSON.parse(await Bun.file('data.json').text()); JSON.parse(await Bun.file('data.seed.json').text()); console.log('JSON OK')\""},
+  "packageManager":"bun@1.3.14"
+}
