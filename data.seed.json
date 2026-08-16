@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "updatedAt": "2026-08-16T18:00:00.000Z",
+  "materials": [
+    {"id":"MAT-001","name":"Měsíček lékařský","unit":"g","min":5000},
+    {"id":"MAT-002","name":"Meduňka lékařská","unit":"g","min":8000},
+    {"id":"MAT-003","name":"Šalvěj lékařská","unit":"g","min":6000},
+    {"id":"MAT-004","name":"Heřmánek pravý","unit":"g","min":7000}
+  ],
+  "boxes": [{"id":"B-0001","name":"Box 01"},{"id":"B-0002","name":"Box 02"},{"id":"B-0003","name":"Box 03"}],
+  "packs": [
+    {"id":"P-0001","materialId":"MAT-001","qty":18500,"box":"B-0001","position":"A01-01","lot":"M26-081","expiry":"2027-02-15"},
+    {"id":"P-0002","materialId":"MAT-001","qty":14200,"box":"B-0001","position":"A01-02","lot":"M26-082","expiry":"2027-02-18"},
+    {"id":"P-0003","materialId":"MAT-002","qty":32400,"box":"B-0002","position":"A02-01","lot":"MD26-041","expiry":"2027-01-20"},
+    {"id":"P-0004","materialId":"MAT-002","qty":11800,"box":"B-0002","position":"A02-02","lot":"MD26-042","expiry":"2027-01-25"},
+    {"id":"P-0005","materialId":"MAT-003","qty":4100,"box":"B-0003","position":"A03-01","lot":"S26-019","expiry":"2027-03-10"},
+    {"id":"P-0006","materialId":"MAT-004","qty":22700,"box":"B-0003","position":"A03-02","lot":"H26-031","expiry":"2027-02-28"}
+  ],
+  "history": [
+    {"id":"EV-001","at":"2026-08-16T15:10:00.000Z","type":"Příjem","packId":"P-0001","material":"Měsíček lékařský","delta":8500,"to":"B-0001"},
+    {"id":"EV-002","at":"2026-08-16T14:20:00.000Z","type":"Výdej","packId":"P-0003","material":"Meduňka lékařská","delta":-1200,"from":"B-0002"},
+    {"id":"EV-003","at":"2026-08-16T12:40:00.000Z","type":"Přesun packu","packId":"P-0005","material":"Šalvěj lékařská","delta":0,"from":"B-0002","to":"B-0003"},
+    {"id":"EV-004","at":"2026-08-15T16:05:00.000Z","type":"Výdej","packId":"P-0001","material":"Měsíček lékařský","delta":-900,"from":"B-0001"}
+  ]
+}
